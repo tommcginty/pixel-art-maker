@@ -3,11 +3,10 @@ const sizePicker = $('#sizePicker');
 
 function makeGrid(){
   // Clear previous grid
-  if(document.getElementsByTagName('tbody'))
-    document.getElementsByTagName('tbody').remove();
+  $('tbody').remove();
   // Select size input
-  let m = document.getElementById('inputHeight').val();
-  let n = document.getElementById('inputWidth').val();
+  let m = $('#inputHeight').val();
+  let n = $('#inputWidth').val();
   // Create grid
   for (let i = 0; i < m; i++)
     pixelCanvas.append('<tr></tr>');
